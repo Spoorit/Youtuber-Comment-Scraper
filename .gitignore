@@ -1,0 +1,14 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local Database (only if you want to keep your scraped data private)
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments
+venv/
+.env
