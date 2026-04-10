@@ -2,7 +2,7 @@
 
 An automated ETL (Extract, Transform, Load) pipeline built to extract raw YouTube comments and perform sentiment analysis, simplifying the process of gathering large-scale social data for analysis in tools like Excel and Power BI. I built this project for learning purposes.
 
-## ⚙️Techonologies
+## ⚙️Technologies
 
  * Python (the core engine)
  * SQLite (storage for raw data)
@@ -30,7 +30,7 @@ I started out just trying to pull comments without getting blocked, which is why
 
 To handle that, I set up a local SQLite database to act as a staging area. Instead of keeping everything in a massive Python list that could crash, saving it to a local .db file let me use Primary Keys to automatically drop duplicate comments as they came in.
 
-Once the raw data was safely stored, I pulled it into Pandas. I spent most of my time here writing logic to strip out junk characters, fix the broken Unix timestamps, and get the text readable. After the text was clean, I run it through VADER sentiment analyzer to figure out if people were being positive, negative, or neutral.
+Once the raw data was safely stored, I pulled it into Pandas. I spent most of my time here writing logic to strip out junk characters, fix the broken Unix timestamps, and get the text readable. After the text was clean, I ran it through VADER sentiment analyzer to figure out if people were being positive, negative, or neutral.
 
 And in the end, I built a simple Tkinter GUI so even others who are not familiar with using the terminal or computers in general can easily use it. I also put in some basic threading so the app wouldn't freeze up while the scraper was running in the background.
 
@@ -41,7 +41,7 @@ This project was a huge step up from standard coding assignments. It forced me t
 ## How can it be improved?
 
 * **Batch Saving**: Update the database to save comments in small chunks as they come in, preventing data loss if the scraper crashes midway.
-* **Smarter AI**: VADER works as intented but it has its limations with other languages and complex sarcasm, switching it out with a local LLM to catch the tone better.
+* **Smarter AI**: VADER works as intended but it has its limitations with other languages and complex sarcasm, switching it out with a local LLM to catch the tone better.
 * **Auto-Visualization**: Have the script automatically generate a basic pie chart of the positive/negative/neutral split and save it alongside the CSV.
 
 ## 🚦Running this project
@@ -51,7 +51,7 @@ This project was a huge step up from standard coding assignments. It forced me t
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the main python script:
+3. Run the main Python script:
    ```bash
    python main.py
    ```
