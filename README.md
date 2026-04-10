@@ -1,6 +1,6 @@
 # 💬YouTube Comment Scraper 
 
-> An automated ETL (Extract, Transform, Load) pipeline built to extract raw YouTube comments and perform sentiment analysis, simplifying the process of gathering large-scale social data for analysis in tools like Excel and Power BI. I built this project for learning purposes.
+An automated ETL (Extract, Transform, Load) pipeline built to extract raw YouTube comments and perform sentiment analysis, simplifying the process of gathering large-scale social data for analysis in tools like Excel and Power BI. I built this project for learning purposes.
 
 ## ⚙️Techonologies
 
