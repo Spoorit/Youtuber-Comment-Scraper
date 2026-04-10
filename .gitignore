@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 
-# Local Database (only if you want to keep your scraped data private)
+# Local Database 
 *.db
 
 # OS files
